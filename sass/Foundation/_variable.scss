@@ -1,0 +1,6 @@
+// XDのPCのwidth1920を($xl:1280)にサイズ変換
+
+$size-change: 1280 / 1920;
+
+// 使い方(ロゴの横幅など) 
+// width: calc($size-change * ○○)px;
