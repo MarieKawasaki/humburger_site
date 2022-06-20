@@ -16,6 +16,7 @@
 // Layout
 // ========================================================
 
+@import "layout/aside";
 @import "layout/container";
 @import "layout/content";
 @import "layout/footer";
@@ -30,6 +31,7 @@
 // Component
 // --------------------------------------------------------
 
+@import "object/component/aside-title";
 @import "object/component/button";
 @import "object/component/copyright";
 @import "object/component/index-item";
@@ -45,6 +47,7 @@
 // Project
 // --------------------------------------------------------
 
+@import "object/project/aside";
 @import "object/project/footer";
 @import "object/project/front-acces";
 @import "object/project/front-article";

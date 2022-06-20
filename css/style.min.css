@@ -1,2 +1,2 @@
-a{text-decoration:none}body{font-size:100%}img{max-width:100%}
+@import"https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@700&display=swap";a{text-decoration:none;color:#000}body{font-size:100%}img{max-width:100%}.l-header{width:100%}@media screen and (min-width: 1280px){.l-header{width:80%}}
 /*# sourceMappingURL=style.min.css.map */

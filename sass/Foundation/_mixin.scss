@@ -8,31 +8,31 @@ $xl: 1280px;          // pc用
 // $xxl: 1920px;      // デスクトップ用
 
 
-@mixin tb {
+@mixin xs {
     @media screen and (min-width: ($xs)) {
       @content;
     }
 }
 
-@mixin tb {
+@mixin sm {
     @media screen and (min-width: ($sm)) {
       @content;
     }
 }
 
-@mixin tb {
+@mixin md {
     @media screen and (min-width: ($md)) {
       @content;
     }
 }
 
-@mixin tb {
+@mixin lg {
     @media screen and (min-width: ($lg)) {
       @content;
     }
 }
 
-@mixin tb {
+@mixin xl {
     @media screen and (min-width: ($xl)) {
       @content;
     }
