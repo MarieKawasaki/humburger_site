@@ -1,0 +1,10 @@
+@use "../foundation/mixin" as m;
+
+.l-main-visual {
+    width: 100%;
+    height: 285px;
+
+    @include m.xl {
+        height: 530px;
+    }
+}

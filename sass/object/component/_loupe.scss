@@ -1,0 +1,24 @@
+
+
+.c-loupe {
+    color: $header-loupe;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        background: url(../../../img/loupe.jpg) ;
+        display: inline-block;
+        position: absolute;
+        top: 11px;
+        left: 16px;
+    }
+
+    input {
+        padding: 11px 11px 11px 50px;
+        background-color: #fff;
+        border: solid 1px $header-color;
+        border-radius: 10px;
+    }
+}
