@@ -1,12 +1,41 @@
 @use "../../foundation/mixin" as m;
 
 .p-aside {
+    background-color: $aside-bg;
+    height: 100%;
 
-    @include m.xl {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
+    &__close-button {
+        margin: 25px 7px auto 279px;
+
+        @include m.xl {
+            display: none;
+        }
+    }
+
+    &__title {
+        padding-top: 82px;
+        padding-left: 46px;
+
+        // @media screen and (max-width: $xl) {
+        //     padding-top: 57px;
+        // } .openに書く
+    }
+
+    &__list {
+        margin-top: 85px;
+        margin-left: 46px;
+    }
+
+    &__subtitle {
+        margin-bottom: 37px;
+    }
+
+    &__unit {
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    &__menu {
+        margin-bottom: 23px;
     }
 }
