@@ -1,0 +1,12 @@
+@use "../../foundation/mixin" as m;
+
+.p-aside {
+
+    @include m.xl {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+}

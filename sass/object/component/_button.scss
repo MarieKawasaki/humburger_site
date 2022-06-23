@@ -31,4 +31,27 @@
             padding: 12px 52px;
         }
     }
+
+    &--close {
+        width: 32px;
+        height: 32px;
+        background-color: $aside-bg;
+        position: relative;
+
+        &::before,&::after {
+            content: "";
+            width: 32px;
+            height: 6px;
+            background-color: $aside-color;
+            position: absolute;
+            top: 13px;
+            left: 0;
+        }
+        &::before {
+            transform: rotate(45deg);
+        }
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
 }

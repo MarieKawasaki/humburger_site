@@ -1,0 +1,31 @@
+@use "../../foundation/mixin" as m;
+
+.p-front-main-visual {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+
+    @include m.lg {
+        margin-bottom: 40px;
+    }
+
+    @include m.xl {
+        margin-bottom: 120px;
+    }
+
+    &__img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        margin-left: 25px;
+        font-family: $m-plus;
+        font-size: 36px;
+        line-height: 1.5;
+
+        @include m.xl {
+            font-size: 40px;
+        }
+    }
+}
