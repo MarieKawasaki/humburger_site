@@ -2,9 +2,36 @@
 
 .l-aside {
     width: 20%;
-    display: block;
+    background-color: $aside-bg;
+
 
     @media screen and (max-width: $xl) {
-        display: none;
+        position: absolute;
+        top: 0;
+        right: -44%;
+        width: 44%;
+        transition: all 300;
+    }
+    @media screen and (max-width: $lg) {
+        position: absolute;
+        top: 0;
+        right: -87%;
+        width: 87%;
+    }
+}
+.l-aside.open {
+    position: absolute;
+    z-index: 20;
+
+    @media screen and (max-width: $xl) {
+        right: 0;
+        opacity: 1;
+        width: 44%;
+    }
+
+    @media screen and (max-width: $lg) {
+        width: 87%;
+        right: 0;
+        opacity: 1;
     }
 }

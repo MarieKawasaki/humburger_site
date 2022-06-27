@@ -1,0 +1,34 @@
+@use "../../foundation/mixin" as m;
+
+.p-footer {
+    background-color: $footer-bg;
+
+    &__index {
+        display: flex;
+        margin: 0 auto;
+        width: 260px;
+        padding-top: 40px;
+    }
+
+    &__item {
+        &:nth-child(1) {
+            position: relative;
+            margin-right: 40px;
+
+            &::after {
+                content: "";
+                width: 1px;
+                height: 18px;
+                background-color: $footer-color;
+                position: absolute;
+                top: 5px;
+                right: -20px;
+            }
+        }
+    }
+    &__copyright {
+        width: 150px;
+        margin: 0 auto;
+        padding-top: 34px;
+    }
+}
