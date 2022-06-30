@@ -1,6 +1,6 @@
 @use "../foundation/mixin" as m;
 
-.l-aside {
+.l-aside{
     width: 20%;
     background-color: $aside-bg;
 
@@ -10,13 +10,14 @@
         top: 0;
         right: -44%;
         width: 44%;
-        transition: all 300;
+        transition: all 0.5s;
     }
     @media screen and (max-width: $lg) {
         position: absolute;
         top: 0;
         right: -87%;
         width: 87%;
+        transition: all 0.5s;
     }
 }
 .l-aside.open {
@@ -25,13 +26,27 @@
 
     @media screen and (max-width: $xl) {
         right: 0;
-        opacity: 1;
-        width: 44%;
+        transition: all 0.5s;
     }
 
     @media screen and (max-width: $lg) {
-        width: 87%;
         right: 0;
-        opacity: 1;
+        transition: all 0.5s;
     }
 }
+// .l-aside.close {
+//     width: 20%;
+//     background-color: $aside-bg;
+
+
+//     @media screen and (max-width: $xl) {
+//         position: absolute;
+//         top: 0;
+//         right: -44%;
+//     }
+//     @media screen and (max-width: $lg) {
+//         position: absolute;
+//         top: 0;
+//         right: -87%;
+//     }
+// }

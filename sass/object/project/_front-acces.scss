@@ -2,48 +2,25 @@
 
 .p-front-acces {
     position: relative;
-    height: 691px;
+    background-color: $f-acces-info-bg;
+    min-height: 691px;
 
     @include m.lg {
-        height: 415px;
+        min-height: 415px;
     }
     @include m.xl {
-        height: 649px;
+        min-height: 649px;
     }
 
-    &__map {
+    &::before {
+        content: "";
         width: 100%;
-        height: 691px;
-        overflow: hidden;
-
-        @include m.lg {
-            height: 415px;
-        }
-        @include m.xl {
-            height: 649px;
-        }
-
-        iframe {
-            width: 100%;
-            height: 841px;
-            margin-top: -150px;
-
-            @include m.lg {
-                height: 565px;
-            }
-            @include m.xl {
-                height: 799px;
-            }
-        }
-    }
-
-    &__mask {
-        width: 100%;
-        height: 415px;
+        height: 60%;
         background-color: $f-acces-mask-bg;
         position: absolute;
         top: 0;
         left: 0;
+        z-index: -5;
 
         @include m.lg {
             height: 100%;
@@ -53,28 +30,35 @@
         }
     }
 
-    &__info {
+    &__map {
         width: 100%;
-        height: 100%;
-        background-color: $f-acces-info-bg;
         position: absolute;
         top: 0;
         left: 0;
+        height: 100%;
+        z-index: -10;
+        overflow: hidden;
+
+        iframe {
+            width: 100%;
+            height: 150%;
+            margin-top: -150px;
+        }
+    }
+    &__info {
+        width: 100%;
         color: $f-acces-color;
-        // padding: 40px 40px auto 40px;
+        font-family: $m-plus;
     }
 
     &__title {
-        padding-top: 40px;
-        padding-left: 40px;
-        position: relative;
-        margin-bottom: 40px;
-        font-family: $m-plus;
+        padding: 40px;
         font-size: 20px;
         line-height: 1.28;
+        position: relative;
 
         @include m.xl {
-            margin-bottom: 119px;
+            padding-bottom: 119px;
             font-size: 24px;
             line-height: 1.5;
         }
@@ -84,26 +68,23 @@
             width: 75px;
             height: 2px;
             position: absolute;
-            bottom: -20px;
+            bottom: 20px;
             left: 40px;
             background-color: $f-acces-color;
 
             @include m.xl {
-                bottom: -55px;
+                bottom: 55px;
             }
+
         }
     }
-
     &__text {
-        padding-left: 40px;
-        padding-right: 40px;
-        font-family: $m-plus;
+        padding: 0 40px 40px 40px;
         font-size: 14px;
         line-height: 2.35;
 
         @include m.xl {
-            font-size: 18px;
-            line-height: 2.1;
+            width: 60%;
         }
     }
 }

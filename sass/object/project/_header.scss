@@ -80,10 +80,9 @@
             width: 138px;
         }
     }
+    
     &__mask {
         display: none;
     }
-    &__mask.open {
-        display: block;
-    }
+    
 }

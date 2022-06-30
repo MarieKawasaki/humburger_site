@@ -1,10 +1,13 @@
 $(function() {
 
     $('.c-button--menu').on('click',function(){
-        $('.p-aside,.l-aside,.c-mask,.l-container,.l-footer').addClass('open');
+        $('.p-aside,.l-aside,.l-container,.l-footer').addClass('open');
+        $('.c-mask').fadeIn();
     });
 
     $('.c-button--close').on('click',function() {
-        $('.p-aside,.l-aside,.c-mask,.l-container,.l-footer').removeClass('open');
-    })
+        $('.l-container,.l-footer').removeClass('open');
+        $('.c-mask').fadeOut();
+        $('.p-aside,.l-aside').removeClass('open');
+    });
 });
