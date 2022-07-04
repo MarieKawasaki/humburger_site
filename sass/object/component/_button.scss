@@ -3,7 +3,7 @@
 .c-button {
 
     &--menu {
-        font-family: $roboto;
+        font-family: 'Roboto', sans-serif;
         font-size: 20px;
         line-height: 1.3;
         color: $header-color;
@@ -18,7 +18,7 @@
     }
 
     &--search {
-        font-family: $m-plus;
+        font-family: 'M PLUS 1p', sans-serif;
         font-size: 16px;
         line-height: 1.4375;
         color: $header-color;
