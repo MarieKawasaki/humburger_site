@@ -4,6 +4,7 @@
     display: block;
     position: relative;
     margin-bottom: 20px;
+    height: 285px;
 
     @include m.lg {
         margin-bottom: 40px;
@@ -11,6 +12,7 @@
 
     @include m.xl {
         margin-bottom: 120px;
+        height: 530px;
     }
 
     &__img {
