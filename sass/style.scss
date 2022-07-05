@@ -37,10 +37,13 @@
 @use "object/component/index-item";
 @use "object/component/logo";
 @use "object/component/mask";
-@use "object/component/menu";
+@use "object/component/aside-menu";
 @use "object/component/mv-title";
 @use "object/component/aside-subtitle";
 @use "object/component/loupe";
+@use "object/component/archive-subtitle";
+@use "object/component/archive-text";
+@use "object/component/archive-title";
 
 // --------------------------------------------------------
 // Project
@@ -52,6 +55,10 @@
 @use "object/project/front-article";
 @use "object/project/front-main-visual";
 @use "object/project/header";
+@use "object/project/archive-article";
+@use "object/project/archive-content";
+@use "object/project/archive-main-visual";
+@use "object/project/archive-pagination";
 
 // --------------------------------------------------------
 // Utility
