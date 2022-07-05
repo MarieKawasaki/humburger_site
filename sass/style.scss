@@ -4,23 +4,23 @@
 // Foundation
 // ========================================================
 
-@import "foundation/color";
-@import "foundation/variable";
-@import "foundation/function";
-@import "foundation/mixin";
-@import "foundation/reset";
-@import "foundation/base";
+@use "foundation/color";
+@use "foundation/variable";
+@use "foundation/function";
+@use "foundation/mixin";
+@use "foundation/reset";
+@use "foundation/base";
 
 // ========================================================
 // Layout
 // ========================================================
 
-@import "layout/aside";
-@import "layout/container";
-@import "layout/content";
-@import "layout/footer";
-@import "layout/header";
-@import "layout/main-visual";
+@use "layout/aside";
+@use "layout/container";
+@use "layout/content";
+@use "layout/footer";
+@use "layout/header";
+@use "layout/main-visual";
 
 // ========================================================
 // Object
@@ -30,27 +30,27 @@
 // Component
 // --------------------------------------------------------
 
-@import "object/component/aside-title";
-@import "object/component/button";
-@import "object/component/copyright";
-@import "object/component/index-item";
-@import "object/component/logo";
-@import "object/component/mask";
-@import "object/component/menu";
-@import "object/component/mv-title";
-@import "object/component/aside-subtitle";
-@import "object/component/loupe";
+@use "object/component/aside-title";
+@use "object/component/button";
+@use "object/component/copyright";
+@use "object/component/index-item";
+@use "object/component/logo";
+@use "object/component/mask";
+@use "object/component/menu";
+@use "object/component/mv-title";
+@use "object/component/aside-subtitle";
+@use "object/component/loupe";
 
 // --------------------------------------------------------
 // Project
 // --------------------------------------------------------
 
-@import "object/project/aside";
-@import "object/project/footer";
-@import "object/project/front-acces";
-@import "object/project/front-article";
-@import "object/project/front-main-visual";
-@import "object/project/header";
+@use "object/project/aside";
+@use "object/project/footer";
+@use "object/project/front-acces";
+@use "object/project/front-article";
+@use "object/project/front-main-visual";
+@use "object/project/header";
 
 // --------------------------------------------------------
 // Utility
