@@ -1,7 +1,9 @@
 @use "../../foundation/mixin" as m;
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
 
 .p-header {
-    background-color: $header-bg;
+    background-color: c.$header-bg;
     position: relative;
     padding-top: 40px;
 

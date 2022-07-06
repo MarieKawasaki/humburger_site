@@ -1,8 +1,10 @@
 @use "../../foundation/mixin" as m;
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
 
 .p-front-acces {
     position: relative;
-    background-color: $f-acces-info-bg;
+    background-color: c.$f-acces-info-bg;
     min-height: 691px;
 
     @include m.lg {
@@ -16,7 +18,7 @@
         content: "";
         width: 100%;
         height: 60%;
-        background-color: $f-acces-mask-bg;
+        background-color: c.$f-acces-mask-bg;
         position: absolute;
         top: 0;
         left: 0;
@@ -47,8 +49,8 @@
     }
     &__info {
         width: 100%;
-        color: $f-acces-color;
-        font-family: $m-plus;
+        color: c.$f-acces-color;
+        font-family: f.$m-plus;
     }
 
     &__title {
@@ -70,7 +72,7 @@
             position: absolute;
             bottom: 20px;
             left: 40px;
-            background-color: $f-acces-color;
+            background-color: c.$f-acces-color;
 
             @include m.xl {
                 bottom: 55px;

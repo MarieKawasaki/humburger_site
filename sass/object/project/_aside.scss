@@ -1,4 +1,5 @@
 @use "../../foundation/mixin" as m;
+@use "../../foundation/color" as c;
 
 .p-aside {
     position: absolute;
@@ -7,7 +8,7 @@
     z-index: 20;
     width: 20%;
 
-    @media screen and (max-width: $xl) {
+    @media screen and (max-width: m.$xl) {
         position: absolute;
         top: 0;
         right: -44%;
@@ -27,7 +28,7 @@
         padding-top: 82px;
         padding-left: 46px;
 
-        @media screen and(max-width: $xl){
+        @media screen and(max-width: m.$xl){
             display: none;
         }
     }
@@ -54,15 +55,15 @@
 .p-aside.open {
     position: absolute;
     z-index: 20;
-    background-color: $aside-bg;
+    background-color: c.$aside-bg;
 
-    @media screen and (max-width: $xl) {
+    @media screen and (max-width: m.$xl) {
         right: 0;
         opacity: 1;
         width: 100%;
     }
 
-    @media screen and (max-width: $lg) {
+    @media screen and (max-width: m.$lg) {
         width: 100%;
         right: 0;
         opacity: 1;

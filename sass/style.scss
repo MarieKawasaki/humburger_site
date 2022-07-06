@@ -16,11 +16,11 @@
 // Layout
 // ========================================================
 
-@use "layout/aside";
+@use "layout/l-aside";
 @use "layout/container";
 @use "layout/content";
-@use "layout/footer";
-@use "layout/header";
+@use "layout/l-footer";
+@use "layout/l-header";
 @use "layout/main-visual";
 
 // ========================================================
@@ -44,6 +44,7 @@
 @use "object/component/archive-subtitle";
 @use "object/component/archive-text";
 @use "object/component/archive-title";
+@use "object/component/pagination";
 
 // --------------------------------------------------------
 // Project

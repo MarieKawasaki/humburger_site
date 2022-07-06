@@ -1,12 +1,14 @@
 @use "../../foundation/mixin" as m;
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
 
 .c-button {
 
     &--menu {
-        font-family: $roboto;
+        font-family: f.$roboto;
         font-size: 20px;
         line-height: 1.3;
-        color: $header-color;
+        color: c.$header-color;
 
         @include m.lg {
             font-size: 34px;
@@ -18,12 +20,12 @@
     }
 
     &--search {
-        font-family: $m-plus;
+        font-family: f.$m-plus;
         font-size: 16px;
         line-height: 1.4375;
-        color: $header-color;
-        background-color: $header-search-button-bg;
-        border: solid 1px $header-color;
+        color: c.$header-color;
+        background-color: c.$header-search-button-bg;
+        border: solid 1px c.$header-color;
         border-radius: 10px;
         padding: 12px 23px;
 
@@ -35,14 +37,14 @@
     &--close {
         width: 32px;
         height: 32px;
-        background-color: $aside-bg;
+        background-color: c.$aside-bg;
         position: relative;
 
         &::before,&::after {
             content: "";
             width: 32px;
             height: 6px;
-            background-color: $aside-color;
+            background-color: c.$aside-color;
             position: absolute;
             top: 13px;
             left: 0;
@@ -53,5 +55,18 @@
         &::after {
             transform: rotate(-45deg);
         }
+    }
+
+
+    &--read {
+        color: c.$a-article-color;
+        font-family: f.$m-plus;
+        font-size: 16px;
+        line-height: 1;
+        width: 164px;
+        height: 42px;
+        border-radius: 20px;
+        background-color: c.$a-pagination-color;
+        padding: 10px 42px;
     }
 }

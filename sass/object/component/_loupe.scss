@@ -1,7 +1,7 @@
-
+@use "../../foundation/color" as c;
 
 .c-loupe {
-    color: $header-loupe;
+    color: c.$header-loupe;
     position: relative;
 
     &::before {
@@ -18,7 +18,7 @@
     input {
         padding: 11px 11px 11px 50px;
         background-color: #fff;
-        border: solid 1px $header-color;
+        border: solid 1px c.$header-color;
         border-radius: 10px;
     }
 }

@@ -1,8 +1,9 @@
-
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
 
 .c-aside-subtitle {
-    font-family: $m-plus;
+    font-family: f.$m-plus;
     font-size: 18px;
     line-height: 1.5;
-    color: $aside-color;
+    color: c.$aside-color;
 }

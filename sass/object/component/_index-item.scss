@@ -1,8 +1,11 @@
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
+
 
 .c-index-item {
     a {
-        color: $footer-color;
-        font-family: $m-plus;
+        color: c.$footer-color;
+        font-family: f.$m-plus;
         font-size: 20px;
         line-height: 1.45;
     }

@@ -1,4 +1,6 @@
 @use "../../foundation/mixin" as m;
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
 
 .p-front-main-visual {
     display: block;
@@ -22,7 +24,7 @@
 
     &__title {
         margin-left: 25px;
-        font-family: 'M PLUS 1p', sans-serif;
+        font-family: f.$roboto;
         font-size: 36px;
         line-height: 1.5;
 

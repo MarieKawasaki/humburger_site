@@ -1,7 +1,8 @@
 @use "../../foundation/mixin" as m;
+@use "../../foundation/color" as c;
 
 .p-footer {
-    background-color: $footer-bg;
+    background-color: c.$footer-bg;
 
     &__index {
         display: flex;
@@ -19,7 +20,7 @@
                 content: "";
                 width: 1px;
                 height: 18px;
-                background-color: $footer-color;
+                background-color: c.$footer-color;
                 position: absolute;
                 top: 5px;
                 right: -20px;
