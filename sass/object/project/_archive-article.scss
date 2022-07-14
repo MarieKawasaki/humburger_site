@@ -1,0 +1,92 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
+
+.p-archive-article {
+    margin: 20px 20px 62px 20px;
+
+    @include m.lg {
+        margin: 37px 40px 106px 40px;
+    }
+    @include m.xl {
+        margin: 70px 100px 150px 100px;
+    }
+
+    &__list {
+        
+    }
+
+    &__item {
+        margin-bottom: 21px;
+
+        @include m.lg {
+            display: flex;
+        }
+    }
+
+    &__img {
+        vertical-align: top;
+
+        @include m.lg {
+            width: 50%;
+        }
+    }
+
+    &__inner {
+        background-color: c.$a-article-bg;
+        padding-bottom: 5%;
+
+        @include m.lg {
+            width: 50%;
+        }
+    }
+
+    &__summary {
+        margin: 0 21% 11% 5%;
+        padding-top: 8%;
+
+        @include m.lg {
+            margin: 0 16% 13% 9%;
+        }
+        @include m.xl {
+            margin: 0 15% 13% 9%;
+            padding-top: 11%;
+        }
+    }
+
+    &__title {
+        @include m.xl {
+            font-size: 36px;
+            line-height: 1.5;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 7%;
+        margin-bottom: 3%;
+
+        @include m.xl {
+            font-size: 24px;
+            line-height: 1.5;
+        }
+    }
+
+    &__text {
+
+    }
+
+    &__button {
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 1;
+        width: 164px;
+        height: 42px;
+        display: block;
+
+        @include m.xl {
+            width: 292px;
+            height: 76px;
+            line-height: 2;
+        }
+    }
+}

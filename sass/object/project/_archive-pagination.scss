@@ -1,0 +1,55 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
+
+.p-archive-pagination {
+
+    &__sp {
+        margin: 0 5% 31px 5%;
+        display: flex;
+        justify-content: space-between;
+
+        @include m.lg {
+            display: none;
+        }
+    }
+
+    &__prev {
+        color: c.$a-pagination-color;
+        margin-left: 10px;
+    }
+
+    &__next {
+        color: c.$a-pagination-color;
+        margin-right: 10px;
+    }
+
+
+    &__pc {
+        @media screen and (max-width: m.$lg) {
+            display: none;
+        }
+
+        margin: 0 12% 30px 12%;
+    }
+
+    &__info {
+        margin-right: 20px;
+        font-size: 16px;
+        line-height: 2.1;
+        color: c.$a-pagination-color;
+    }
+
+    &__num {
+        border: solid 1px c.$a-pagination-color;
+        color: c.$a-pagination-color;
+        margin-right: 25px;
+        padding: 7px 13px;
+        font-size: 16px;
+        line-height: 2.1;
+    }
+    &__list {
+        display: inline-block;
+        margin-left: 25px;
+    }
+}

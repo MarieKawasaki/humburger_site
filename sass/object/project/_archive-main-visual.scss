@@ -61,6 +61,9 @@
                 top: 50%;
                 transform: translateY(-50%);
             }
+            @include m.xl {
+                left: 27%;
+            }
         }
     }
 }
