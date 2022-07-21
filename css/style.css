@@ -948,4 +948,8 @@ img {
 .p-archive-pagination__list {
   display: inline-block;
   margin-left: 25px;
+}
+.p-archive-pagination .active {
+  background-color: #3C2B1C;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
