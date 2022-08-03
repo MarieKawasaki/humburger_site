@@ -69,4 +69,18 @@
             border-radius: 50px;
         }
     }
+
+    &--buy {
+        color: c.$s-color;
+        background-color: c.$s-button-bg;
+        font-family: f.$m-plus;
+        font-size: 16px;
+        line-height: 1.43;
+        border-radius: 20px;
+        border: solid 1px c.$s-color;
+        // padding: 30px 145px;
+        font-weight: bold;
+        width: 100%;
+        padding: 30px 0;
+    }
 }

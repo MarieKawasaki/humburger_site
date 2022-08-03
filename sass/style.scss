@@ -60,6 +60,12 @@
 @use "object/project/archive-content";
 @use "object/project/archive-main-visual";
 @use "object/project/archive-pagination";
+@use "object/project/single-main-visual";
+@use "object/project/single-summary";
+@use "object/project/single-photo";
+@use "object/project/single-list";
+@use "object/project/single-html";
+@use "object/project/single-order";
 
 // --------------------------------------------------------
 // Utility
